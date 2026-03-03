@@ -129,4 +129,20 @@ document.addEventListener("DOMContentLoaded", () => {
   if (categoryBtns.length > 0) {
     renderProducts(categoryBtns[0].textContent.trim());
   }
+
+  // 모달창 닫기
+  const modal = document.getElementById("mobileModal");
+  const closeButtons = document.querySelectorAll(".close");
+
+  closeButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
 });

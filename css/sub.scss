@@ -1,0 +1,137 @@
+// .header {
+//   height: 90px;
+// }
+/*********** header *************/
+.header .gnb {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  overflow: hidden;
+}
+.header .gnb .backBtn {
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+}
+.header .gnb li a {
+  font-weight: 500;
+  font-size: 20px;
+}
+/*********** pageTitle *************/
+.category_list {
+  height: 40px;
+}
+.category_list ul {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.category_list ul li {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 5px 30px;
+  border: 1px solid #9c9c9c;
+  border-radius: 20px;
+  margin: 10px 5px;
+  color: #303030;
+}
+.category_list ul li.active,
+.category_list ul li.active a {
+  border: none;
+  color: white;
+  background-color: #ffe397;
+  font-weight: bold;
+}
+/*********** category_list *************/
+.number_filter {
+  margin: 30px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.number_filter .resultItem {
+  font-size: 16px;
+}
+.number_filter .filter_box button {
+  border: none;
+  padding: 5px 10px;
+  background-color: white;
+}
+/*********** number_filter *************/
+.searchItem {
+  padding: 5px;
+}
+.searchItem .searchItemList {
+  overflow-x: initial;
+  overflow-y: initial;
+  flex-wrap: wrap;
+  height: 100%;
+  gap: 10px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.searchItemList li {
+  width: calc(48%);
+  height: 100%;
+  margin: 10px 0;
+}
+.searchItemList li a .itemImg_box {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+.searchItemList li .ratePrice_box .price_box .sale {
+  font-size: 12px;
+  font-weight: bold;
+}
+.searchItemList li .post_sale {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: right;
+}
+.searchItemList li .post_sale .postFee {
+  color: #9c9c9c;
+  font-size: 10px;
+  margin-right: 5px;
+}
+.searchItemList li .ratePrice_box .starReview .scoreCounts .rateScore {
+  font-size: 13px;
+}
+.searchItemList li .ratePrice_box .starReview .scoreCounts .review {
+  font-size: 11px;
+}
+.searchItemList li .ratePrice_box .price_box .dualPrice .salePrice {
+  font-size: 16px;
+}
+/*********** searchItem *************/
+.pageIntergator {
+}
+.pageIntergator .pageIntergatorList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.pageIntergatorList .pageItemLeft a,
+.pageIntergatorList .pageItemRight a {
+  font-size: 40px;
+  padding: 0 20px;
+}
+.pageIntergatorList .pageItem a {
+  width: 20px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.pageIntergatorList .pageItem a.on {
+  font-weight: bold;
+  font-size: 22px;
+  border-bottom: 1px solid black;
+}
+/*********** pageIntergator *************/

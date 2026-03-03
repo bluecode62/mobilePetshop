@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>댕냥베베</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/sub.css" />
+    <!--css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <!--폰트어썸-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <!--favicon-->
+    <script src="./js/main.js"></script>
+    <script type="module" src="./js/sub.js"></script>
+    <!--자바스크립트-->
+  </head>
+  <body>
+    <div class="acordianMenu">
+      <div class="menu_close">
+        <p>메뉴</p>
+        <div class="closeBtn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <ul class="basicMenu">
+        <li>
+          <a href="#!">로그인</a>
+          <a href="#!">회원가입</a>
+          <a href="#!">장바구니</a>
+          <a href="#!">주문조회</a>
+        </li>
+      </ul>
+      <input type="search" class="searchBar" />
+      <ul class="categoryList">
+        <li>
+          <a href="#!" class="menuBtn">
+            강아지
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+          <ul class="insideList">
+            <li>
+              <a href="#!">사료</a>
+              <a href="#!">간식</a>
+              <a href="#!">급식기/급수기</a>
+              <a href="#!">이동장/유모차</a>
+              <a href="#!">의류/악세사리</a>
+              <a href="#!">이름표</a>
+            </li>
+            <li>
+              <a href="#!">영양제</a>
+              <a href="#!">미용/목욕</a>
+              <a href="#!">하우스/울타리</a>
+              <a href="#!">건강관리</a>
+              <a href="#!">목줄/리드줄</a>
+              <a href="#!">장난감</a>
+            </li>
+            <li>
+              <a href="#!">위생/배변</a>
+              <a href="#!">대용량</a>
+              <a href="#!">기타식품</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!" class="menuBtn">
+            고양이
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+          <ul class="insideList">
+            <li>
+              <a href="#!">사료</a>
+              <a href="#!">간식</a>
+              <a href="#!">급식기/급수기</a>
+              <a href="#!">이동장/유모차</a>
+              <a href="#!">의류/악세사리</a>
+              <a href="#!">이름표</a>
+            </li>
+            <li>
+              <a href="#!">영양제</a>
+              <a href="#!">미용/목욕</a>
+              <a href="#!">하우스/울타리</a>
+              <a href="#!">건강관리</a>
+              <a href="#!">목줄/리드줄</a>
+              <a href="#!">장난감</a>
+            </li>
+            <li>
+              <a href="#!">위생/배변</a>
+              <a href="#!">대용량</a>
+              <a href="#!">기타식품</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!"
+            >이벤트
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            커뮤니티
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="serviceCall">
+        <p>고객센터 010-7777-7777</p>
+        <div class="serviceTime">
+          <p>월-금 09:30 - 18:30</p>
+          <p>(점심시간 11:00-12:00)</p>
+          <p>토, 일, 공휴일 휴무</p>
+        </div>
+        <div class="serviceBtn">
+          <button class="call">
+            <i class="fa-solid fa-phone"></i>
+            전화걸기
+          </button>
+          <button class="channel">
+            <div class="channelIcon">
+              <img src="./images/channelIcon.png" alt="채널 아이콘" />
+            </div>
+            채널추가
+          </button>
+        </div>
+      </div>
+      <div class="snsList">
+        <div class="snsIcon">
+          <img src="./images/snsIcon01.png" alt="facebook" />
+        </div>
+        <div class="snsIcon">
+          <img src="./images/snsIcon02.png" alt="instagram" />
+        </div>
+        <div class="snsIcon">
+          <img src="./images/snsIcon03.png" alt="kakaoTalk" />
+        </div>
+      </div>
+    </div>
+
+    <div class="header_outer">
+      <header class="header" id="header">
+        <div class="left_sideBox">
+          <div class="arcodian">
+            <img src="./images/listSearch_icon.png" alt="리스트서치 아이콘" />
+          </div>
+          <div class="logo_box">
+            <a href="./index.html">
+              <img src="Mobilelogo.png" alt="모바일로고 이미지" />
+            </a>
+          </div>
+          <div class="pet-select">
+            <button class="selected">강아지</button>
+            <ul class="options">
+              <li>강아지</li>
+              <li>고양이</li>
+            </ul>
+          </div>
+        </div>
+        <div class="basicIcon_box">
+          <div class="cart icon" data-count="0">
+            <img src="./images/main_cart.png" alt="카트 아이콘" />
+          </div>
+        </div>
+        <nav class="pageTitle">
+          <ul class="gnb">
+            <li class="backBtn">
+              <a href="./index.html">
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
+            </li>
+            <li class="pageTitle">
+              <a href="#!"> 산책용품 </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="category_list">
+      <ul>
+        <li>
+          <a href="#!" data-category="목줄"> 목줄 </a>
+        </li>
+        <li class="active">
+          <a href="#!" data-category="하네스"> 하네스 </a>
+        </li>
+        <li>
+          <a href="#!" data-category="리드줄"> 리드줄 </a>
+        </li>
+        <li>
+          <a href="#!" data-category="자동줄"> 자동줄 </a>
+        </li>
+        <li>
+          <a href="#!" data-category="라이트"> 라이트 </a>
+        </li>
+        <li>
+          <a href="#!" data-category="이름표"> 이름표 </a>
+        </li>
+        <li>
+          <a href="#!" data-category="이동장"> 이동장 </a>
+        </li>
+        <li>
+          <a href="#!" data-category="이동가방"> 이동가방 </a>
+        </li>
+        <li>
+          <a href="#!" data-category="유모차"> 유모차 </a>
+        </li>
+        <li>
+          <a href="#!" data-category="차량용"> 차량용 </a>
+        </li>
+        <li>
+          <a href="#!" data-category="입마개"> 입마개 </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="wrap">
+      <div class="number_filter">
+        <div class="resultItem">총 <b>45</b>개 상품</div>
+        <div class="filter_box">
+          <button class="filter_btn">
+            <span class="label">신상품</span>
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <button class="filter_btn">
+            <span class="label">소/중견</span>
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+      </div>
+
+      <section class="searchItem">
+        <ul class="newProductList searchItemList">
+          <!-- <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes01.jpg" alt="산책용품 이미지01" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  베니즈 BENNYS 강아지 가슴줄 베이직 하네스 옐로우
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">3.5</span>
+                      <span class="review">(12)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">10%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">30,000원</div>
+                      <div class="salePrice">27,000원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes02.jpg" alt="산책용품 이미지02" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  바잇미 캔디크레용 하네스 라이트 블루S
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">3.5</span>
+                      <span class="review">(5)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">3,000원</div>
+                      <div class="sale">10%</div> -->
+                    <!-- </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice"></div>
+                      <div class="salePrice">29,000원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes03.jpg" alt="산책용품 이미지02" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  바잇미 캔디크레용 하네스 라이트 핑크S
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">3.5</span>
+                      <span class="review">(9)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">3,000원</div>
+                      <div class="sale">10%</div>
+                    </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">29,000원</div>
+                      <div class="salePrice">23,900원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes04.jpg" alt="산책용품 이미지04" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">쥬쥬베 에어매쉬 하네스 형광</div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">3.0</span>
+                      <span class="review">(3)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">3,000원</div>
+                      <div class="sale">48%</div>
+                    </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">23,100원</div>
+                      <div class="salePrice">12,000원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes05.jpg" alt="산책용품 이미지04" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  베니즈 BENNYS 강아지 가슴줄 베이직 하네스 옐로우
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">3.5</span>
+                      <span class="review">(9)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">무료배송</div>
+                      <div class="sale">30%</div>
+                    </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">26,430원</div>
+                      <div class="salePrice">18,500원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes06.jpg" alt="산책용품 이미지04" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  빠른직구D 산책 야광 형광 하네스 리드줄 모음
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">3.8</span>
+                      <span class="review">(7)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">3,000원</div>
+                      <div class="sale">30%</div>
+                    </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">19,290원</div>
+                      <div class="salePrice">13,500원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes07.jpg" alt="산책용품 이미지04" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  커고 스태쉬 앤 대쉬 백팩 하네스 블랙
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">5.0</span>
+                      <span class="review">(0)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">3,000원</div>
+                      <div class="sale"></div>
+                    </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice"></div>
+                      <div class="salePrice">74,800원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes08.jpg" alt="산책용품 이미지04" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  바잇미 캔디크레용 하네스 라이트 블루 S
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">3.5</span>
+                      <span class="review">(3)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">3,000원</div>
+                      <div class="sale"></div>
+                    </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice"></div>
+                      <div class="salePrice">29,000원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes09.jpg" alt="산책용품 이미지04" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  커고 스태쉬 앤 대쉬 백팩 하네스 블랙
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">5.0</span>
+                      <span class="review">(0)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">3,000원</div>
+                      <div class="sale"></div>
+                    </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice"></div>
+                      <div class="salePrice">74,800원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes10.jpg" alt="산책용품 이미지10" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">헐티 콤피 하네스 가슴줄</div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.0</span>
+                      <span class="review">(6)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">3,000원</div>
+                      <div class="sale">22%</div>
+                    </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">36,000원</div>
+                      <div class="salePrice">28,000원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes11.jpg" alt="산책용품 이미지11" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">패리스독 아웃도어 하네스</div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">3.5</span>
+                      <span class="review">(5)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">3,000원</div>
+                      <div class="sale">13%</div>
+                    </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">17,000원</div>
+                      <div class="salePrice">14,500원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes12.jpg" alt="산책용품 이미지10" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  패리스독 심플 패턴 백팩 하네스 + 리드줄 세트
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.5</span>
+                      <span class="review">(39)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">3,000원</div>
+                      <div class="sale">10%</div>
+                    </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">15,000원</div>
+                      <div class="salePrice">13,000원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes13.webp" alt="산책용품 이미지11" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">플라워 팬던트 하네스 리드줄 세트</div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">3.5</span>
+                      <span class="review">(30)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">3,000원</div>
+                      <div class="sale">10%</div>
+                    </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">39,000원</div>
+                      <div class="salePrice">36,000원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes14.jpg" alt="산책용품 이미지14" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  후르타 머드벤쳐 러쉬 강아지 리드줄
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.3</span>
+                      <span class="review">(47)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">3,000원</div>
+                      <div class="sale">21%</div>
+                    </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">75,000원</div>
+                      <div class="salePrice">59,000원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes15.jpg" alt="산책용품 이미지10" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  브레드 가방 푹백파우치 배변봉투 똥추 케이스
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.5</span>
+                      <span class="review">(90)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">3,000원</div>
+                      <div class="sale">10%</div>
+                    </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">16,000원</div>
+                      <div class="salePrice">11,700원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <div class="itemImg_box">
+                <img src="./images/hanes16.jpg" alt="산책용품 이미지16" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  페리스독 베어턱받이 하네스 블루 리드줄 포함
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.5</span>
+                      <span class="review">(39)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="post_sale">
+                      <div class="postFee">3,000원</div>
+                      <div class="sale">18%</div>
+                    </div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">14,000원</div>
+                      <div class="salePrice">11,500원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li> -->
+        </ul>
+        <nav class="pageIntergator">
+          <ul class="pageIntergatorList">
+            <li class="pageItemLeft">
+              <a href="#!">&laquo;</a>
+            </li>
+            <li class="pageItem">
+              <a href="#!" class="on">1</a>
+            </li>
+            <li class="pageItem">
+              <a href="#!">2</a>
+            </li>
+            <li class="pageItem">
+              <a href="#!">3</a>
+            </li>
+            <li class="pageItemRight">
+              <a href="#!">&raquo;</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+
+    <a href="#header">
+      <div class="topBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+    </a>
+
+    <div class="footer_outer">
+      <footer class="footer">
+        <div class="policy_list">
+          <div class="police_line">
+            <span>홈</span>
+            <span>이용약관</span>
+            <span>제휴문의</span>
+            <span>입점문의</span>
+          </div>
+          <div class="police_line">
+            <span>개인정보 처리방침</span>
+            <span>고객센터</span>
+            <span>이용안내</span>
+          </div>
+        </div>
+        <div class="company_info">
+          <div class="timeTable">
+            <p class="centerNum">CS CENTER 080-777-7777</p>
+            월-금 09:30 - 1830 (점심시간 11:00-12:00) 토,일,공휴일 휴무
+          </div>
+          <p class="company_detail">
+            회사명:(주)댕댕샵 대표:배윤주 주소:부산특별시 광안리 와우산로30길
+            18(창전동) 2층 고객문의:danginfo@dangshop.kr 입점제안 및
+            마케팅제휴:marketing@dangshop.kr 사업자등록번호:318-00-00000
+            사업자번호조회> 통신판매업신고:2025-별내-263
+          </p>
+          <p class="hosting_name">
+            호스팅 사업자: (주)카페24 Copyright @ 댕댕샵.All rights reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>댕냥베베</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/sub.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
+    <!--css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <!--폰트어썸-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <!--favicon-->
+    <script src="./js/detail.js"></script>
+    <script src="./js/main.js"></script>
+    <!--javascript-->
+  </head>
+  <body>
+    <div class="acordianMenu">
+      <div class="menu_close">
+        <p>메뉴</p>
+        <div class="closeBtn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <ul class="basicMenu">
+        <li>
+          <a href="#!">로그인</a>
+          <a href="#!">회원가입</a>
+          <a href="#!">장바구니</a>
+          <a href="#!">주문조회</a>
+        </li>
+      </ul>
+      <input type="search" class="searchBar" />
+      <ul class="categoryList">
+        <li>
+          <a href="#!" class="menuBtn">
+            강아지
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+          <ul class="insideList">
+            <li>
+              <a href="#!">사료</a>
+              <a href="#!">간식</a>
+              <a href="#!">급식기/급수기</a>
+              <a href="#!">이동장/유모차</a>
+              <a href="#!">의류/악세사리</a>
+              <a href="#!">이름표</a>
+            </li>
+            <li>
+              <a href="#!">영양제</a>
+              <a href="#!">미용/목욕</a>
+              <a href="#!">하우스/울타리</a>
+              <a href="#!">건강관리</a>
+              <a href="#!">목줄/리드줄</a>
+              <a href="#!">장난감</a>
+            </li>
+            <li>
+              <a href="#!">위생/배변</a>
+              <a href="#!">대용량</a>
+              <a href="#!">기타식품</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!" class="menuBtn">
+            고양이
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+          <ul class="insideList">
+            <li>
+              <a href="#!">사료</a>
+              <a href="#!">간식</a>
+              <a href="#!">급식기/급수기</a>
+              <a href="#!">이동장/유모차</a>
+              <a href="#!">의류/악세사리</a>
+              <a href="#!">이름표</a>
+            </li>
+            <li>
+              <a href="#!">영양제</a>
+              <a href="#!">미용/목욕</a>
+              <a href="#!">하우스/울타리</a>
+              <a href="#!">건강관리</a>
+              <a href="#!">목줄/리드줄</a>
+              <a href="#!">장난감</a>
+            </li>
+            <li>
+              <a href="#!">위생/배변</a>
+              <a href="#!">대용량</a>
+              <a href="#!">기타식품</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!"
+            >이벤트
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            커뮤니티
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="serviceCall">
+        <p>고객센터 010-7777-7777</p>
+        <div class="serviceTime">
+          <p>월-금 09:30 - 18:30</p>
+          <p>(점심시간 11:00-12:00)</p>
+          <p>토, 일, 공휴일 휴무</p>
+        </div>
+        <div class="serviceBtn">
+          <button class="call">
+            <i class="fa-solid fa-phone"></i>
+            전화걸기
+          </button>
+          <button class="channel">
+            <div class="channelIcon">
+              <img src="./images/channelIcon.png" alt="채널 아이콘" />
+            </div>
+            채널추가
+          </button>
+        </div>
+      </div>
+      <div class="snsList">
+        <div class="snsIcon">
+          <img src="./images/snsIcon01.png" alt="facebook" />
+        </div>
+        <div class="snsIcon">
+          <img src="./images/snsIcon02.png" alt="instagram" />
+        </div>
+        <div class="snsIcon">
+          <img src="./images/snsIcon03.png" alt="kakaoTalk" />
+        </div>
+      </div>
+    </div>
+
+    <div class="header_outer">
+      <header class="header" id="header">
+        <div class="arcodian">
+          <img src="./images/listSearch_icon.png" alt="리스트서치 아이콘" />
+        </div>
+        <div class="logo_box">
+          <a href="./index.html">
+            <img src="Mobilelogo.png" alt="모바일로고 이미지" />
+          </a>
+        </div>
+        <div class="pet-select">
+          <button class="selected">강아지</button>
+          <ul class="options">
+            <li>강아지</li>
+            <li>고양이</li>
+          </ul>
+        </div>
+        <div class="basicIcon_box">
+          <div class="cart icon" data-count="0">
+            <img src="./images/main_cart.png" alt="카트 아이콘" />
+          </div>
+        </div>
+        <nav class="pageTitle">
+          <ul class="gnb">
+            <li class="backBtn">
+              <a href="./sub.html">
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
+            </li>
+            <li class="pageTitle">
+              <a href="#!"> 상품상세정보 </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="mainItem_banner">
+      <ul class="detailItemImg">
+        <li>
+          <img src="./images/detail_main.png" alt="디테일 이미지01" />
+        </li>
+        <li>
+          <img src="./images/detail_sub02.jpeg" alt="디테일 이미지02" />
+        </li>
+        <li>
+          <img src="./images/detail_sub03.jpeg" alt="디테일 이미지03" />
+        </li>
+        <li>
+          <img src="./images/detail_sub04.jpeg" alt="디테일 이미지04" />
+        </li>
+        <li>
+          <img src="./images/detail_sub05.jpeg" alt="디테일 이미지05" />
+        </li>
+      </ul>
+      <div class="inside_arrow leftInside">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div class="inside_arrow rightInside">
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+      <div class="num_indicator">
+        <div class="indicator_left">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <span class="currentPage">1</span>
+        /
+        <span class="totalPage">5</span>
+        <div class="indicator_right">
+          <i class="fa-solid fa-angle-right"> </i>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <section class="productInfo">
+        <div class="shareLike_box">
+          <i class="fa-solid fa-share-nodes"></i>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="product_detail">
+          <p class="productName">플라워 팬던트 하네스 리드줄 세트</p>
+          <p class="salePrice">
+            <span class="sale">10%</span>
+            <span class="originalPrice">39,000원</span>
+          </p>
+          <span class="salePrice">36,000원</span>
+          <span class="itemStatus">재고있음</span>
+        </div>
+        <div class="postInfo">
+          <div class="postCompany">
+            <span class="leftWord">배송정보</span>
+            <span class="rightWord">우체국 택배</span>
+          </div>
+          <div class="postFee">
+            <span class="leftWord">배송비</span>
+            <span class="rightWord">3,000원(조건부 배송)</span>
+          </div>
+          <div class="over_time">
+            <p class="basicPrice">(40,000원 이상 결제 시 무료배송)</p>
+            <p class="realTime">평일 오후 2시 이전에 주문 시 당일배송</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="buyCount" data-price="36000">
+        <div class="numCalculate">
+          <button class="sub calcBox">-</button>
+          <input
+            type="number"
+            class="numBox"
+            value="1"
+            min="1"
+            size="5"
+            readonly
+          />
+          <button class="add calcBox">+</button>
+        </div>
+        <div class="totalBox">
+          <div class="totalNum">수량: <span class="choseNum">1개</span></div>
+          <div class="totalSum">36,000원</div>
+        </div>
+      </div>
+      <div class="button_list">
+        <button class="wishBtn">
+          <i class="fa-solid fa-cart-shopping shoppingCart"></i>
+          장바구니 담기
+        </button>
+        <button class="buyBtn">구매하기</button>
+      </div>
+
+      <div class="shortReview_box">
+        <div class="itemHeart">
+          <i class="fa-solid fa-heart" style="color: #fe2a2a"></i>
+          <span class="shortResult">구매자의 90%가 만족한 상품이에요</span>
+        </div>
+        <div class="itemPicReview">
+          <div class="picReview_img">
+            <img src="./images/review_detail01.PNG" alt="리뷰 이미지01" />
+          </div>
+          <div class="id_stars">
+            <span class="userId">k******</span>
+            <ul class="star">
+              <li>
+                <img src="./images/start_icon.png" alt="아이콘 이미지" />
+              </li>
+              <li>
+                <img src="./images/start_icon.png" alt="아이콘 이미지" />
+              </li>
+              <li>
+                <img src="./images/start_icon.png" alt="아이콘 이미지" />
+              </li>
+              <li>
+                <img src="./images/start_icon.png" alt="아이콘 이미지" />
+              </li>
+              <li>
+                <img src="./images/start_icon.png" alt="아이콘 이미지" />
+              </li>
+            </ul>
+            <p class="reviewWords">
+              색상도 이뻐서 그런지 비숑인 우리 애한테 아주 잘 어울려요!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviewEvent_banner"></div>
+
+      <nav class="itemInfo_category">
+        <ul>
+          <li>
+            <a href="#!" class="on">상세정보</a>
+          </li>
+          <li>
+            <a href="#!">상품문의</a>
+          </li>
+          <li>
+            <a href="#!">배송정보</a>
+          </li>
+          <li>
+            <a href="#!">반품/교환정보</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="itemDetail_container">
+        <img src="./images/product_detail_pic01.webp" alt="상세 이미지01" />
+        <img src="./images/product_detail_pic02.webp" alt="상세 이미지02" />
+        <img src="./images/product_detail_pic03.webp" alt="상세 이미지03" />
+        <img src="./images/product_detail_pic04.webp" alt="상세 이미지04" />
+        <img src="./images/product_detail_pic05.webp" alt="상세 이미지05" />
+        <img src="./images/product_detail_pic06.png" alt="상세 이미지06" />
+        <img src="./images/product_detail_pic07.webp" alt="상세 이미지07" />
+        <div class="gradient_overlay"></div>
+        <button class="detailMore_btn">
+          <span class="btnTxt">상품설명 펼쳐보기</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+      </div>
+
+      <section class="newProduct recommendation">
+        <div class="listBox">
+          <div class="listTitle">
+            이 상품과 함께 많이 구매된 상품
+            <div class="titleIcon">
+              <img src="./images/Confetti.png" alt="신상품 아이콘" />
+            </div>
+          </div>
+          <div class="more_btn">MORE></div>
+        </div>
+        <ul class="newProductList">
+          <li>
+            <a href="#!">
+              <div class="itemImg_box">
+                <img src="./images/hanes34.webp" alt="추천 이미지01" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  딸기 백팩 하네스 세트(배낭+하네스+리드줄)(XXL~L)
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.8</span>
+                      <span class="review">(39)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">6%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">50,000원</div>
+                      <div class="salePrice">47,000원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <div class="itemImg_box">
+                <img src="./images/hanes45.jpg" alt="추천 이미지02" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [무료배송]준성펫 솜사탕 메쉬 하네스&리드줄 세트(1.5m)
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.8</span>
+                      <span class="review">(20)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">20%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">15,900원</div>
+                      <div class="salePrice">12,720원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <div class="itemImg_box">
+                <img src="./images/hanes43.png" alt="추천 이미지03" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [무료배송]알뜰펫 꿀벌 하네스 S-XL
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.9</span>
+                      <span class="review">(260)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">25%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">19,900원</div>
+                      <div class="salePrice">14,900원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <div class="itemImg_box">
+                <img src="./images/hanes33.png" alt="신상품이미지01" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  데이지 하네스 리드줄 세트 XXS~L(5 size)
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.8</span>
+                      <span class="review">(77)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">6%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">50,000</div>
+                      <div class="salePrice">47,000원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <div class="itemImg_box">
+                <img src="./images/hanes15.jpg" alt="신상품이미지01" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  브레드 가방 풉백파우치 배변봉투 똥츄 케이스
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.5</span>
+                      <span class="review">(90)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">49%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">21,900원</div>
+                      <div class="salePrice">11,700원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="review_box">
+        <div class="starReview_list">
+          <div class="starRate">
+            <span class="rateName">별점</span>
+            <div class="star">
+              <img src="./images/start_icon.png" alt="별점 아이콘" />
+            </div>
+            <span class="reviewCounts">4.5</span>
+            <div class="review_list">
+              <span class="reviewAll">리뷰수</span>
+              <span class="reviewCounts">40</span>
+            </div>
+          </div>
+          <div class="filterBtn">
+            <div class="reviewKinds">
+              리뷰종류
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="reviewTime">
+              필터정렬
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="reviewTxt_box reviewTxt01">
+          <div class="leftBox">
+            <div class="nameID">강****</div>
+            <div class="star">
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+            </div>
+          </div>
+          <div class="rightBox">2025.03.21</div>
+        </div>
+        <div class="itemOptions">
+          <span class="option">구매옵션</span>
+          <span class="itemSize_Color">핑크 | S</span>
+        </div>
+        <div class="reviewPic">
+          <img src="./images/review_detail10.webp" alt="리뷰 사진이미지01" />
+        </div>
+        <div class="reviewWords">
+          너무 이쁘고 좋아요 두놈세트로 2쌍구매(네이버페이 구매평)
+        </div>
+        <div class="iconBox">
+          <i class="fa-solid fa-heart" style="color: #fe2a2a"></i>
+          <span>10</span>
+          <i class="fa-solid fa-thumbs-up" style="color: #a3d7ff"></i>
+          <span>2</span>
+        </div>
+        <div class="comment_box">
+          <div class="likeBox">
+            <i class="fa-solid fa-heart" style="color: #d9d9d9"></i>
+            <span>도움돼요</span>
+          </div>
+          <div class="commentBox">
+            <i class="fa-regular fa-message" style="color: #d9d9d9"></i>
+            <span>댓글쓰기</span>
+          </div>
+        </div>
+        <div class="reviewTxt_box reviewTxt02">
+          <div class="leftBox">
+            <div class="nameID">C****</div>
+            <div class="star">
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+            </div>
+          </div>
+          <div class="rightBox">2025.03.19</div>
+        </div>
+        <div class="itemOptions">
+          <span class="option">구매옵션</span>
+          <span class="itemSize_Color">핑크 | S</span>
+        </div>
+        <div class="reviewPic">
+          <img src="./images/review_detail04.webp" alt="리뷰 사진이미지02" />
+        </div>
+        <div class="reviewWords">
+          거부감 없이 잘 입히고 다녀요ㅎㅎ 색도 예뻐서 넘 좋아요
+        </div>
+        <div class="iconBox">
+          <i class="fa-solid fa-heart" style="color: #fe2a2a"></i>
+          <span>2</span>
+          <i class="fa-solid fa-thumbs-up" style="color: #a3d7ff"></i>
+          <span>1</span>
+        </div>
+        <div class="comment_box">
+          <div class="likeBox">
+            <i class="fa-solid fa-heart" style="color: #d9d9d9"></i>
+            <span>도움돼요</span>
+          </div>
+          <div class="commentBox">
+            <i class="fa-regular fa-message" style="color: #d9d9d9"></i>
+            <span>댓글쓰기</span>
+          </div>
+        </div>
+        <div class="reviewTxt_box reviewTxt03">
+          <div class="leftBox">
+            <div class="nameID">b****</div>
+            <div class="star">
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+              <div class="star_img">
+                <img src="./images/start_icon.png" alt="별점 아이콘" />
+              </div>
+            </div>
+          </div>
+          <div class="rightBox">2025.07.08</div>
+        </div>
+        <div class="itemOptions">
+          <span class="option">구매옵션</span>
+          <span class="itemSize_Color">핑크 | S</span>
+        </div>
+        <div class="reviewPic">
+          <img src="./images/review_detail11.webp" alt="리뷰 사진이미지03" />
+        </div>
+        <div class="reviewWords">
+          사진은 밤바다에서 찍어서 잘 보이진 않지만 진짜 너무 예쁜
+          하네스예요❤️❤️❤️(네이버페이 구매평)
+        </div>
+        <div class="iconBox">
+          <i class="fa-solid fa-heart" style="color: #fe2a2a"></i>
+          <span>3</span>
+          <i class="fa-solid fa-thumbs-up" style="color: #a3d7ff"></i>
+          <span>3</span>
+        </div>
+        <div class="comment_box">
+          <div class="likeBox">
+            <i class="fa-solid fa-heart" style="color: #d9d9d9"></i>
+            <span>도움돼요</span>
+          </div>
+          <div class="commentBox">
+            <i class="fa-regular fa-message" style="color: #d9d9d9"></i>
+            <span>댓글쓰기</span>
+          </div>
+        </div>
+        <button class="allBtn">36개 후기 전체보기</button>
+      </section>
+
+      <section class="inquryInfo">
+        <ul>
+          <li class="inquryItem">
+            <div class="inquryHeader">
+              <a href="#!"> 상품문의 </a>
+            </div>
+            <div class="inquryBox listBox">
+              <div class="inqury_Txt">
+                <span>김***</span>
+                <span class="date">2025-12-01</span>
+                <p>문의드립니다.</p>
+              </div>
+              <div class="inqury_Txt">
+                <span>H***</span>
+                <span class="date">2025-11-30</span>
+                <p>사이즈 문의</p>
+              </div>
+              <div class="inqury_Txt">
+                <span>현***</span>
+                <span class="date">2025-09-26</span>
+                <p>
+                  비밀글입니다.
+                  <i class="fa-solid fa-lock" style="color: #828282"></i>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="inquryItem">
+            <div class="inquryHeader">
+              <a href="#!"> 반품/교환정보 </a>
+            </div>
+            <div class="refundInfo listBox">
+              <p>[교환/반품 가능 기간]</p>
+              <p>
+                구매자의 단순 변심으로 인한 반품/교환은 상품 수령일로부터 7일
+                이내 가능합니다.
+              </p>
+              <p>
+                • 상품의 특성상 묶음 배송이 불가한 경우(모래, 배변패드,캣타워
+                등) 주문 상품 개수에 비례하여 교환/반품 배송비가 부과될 수
+                있습니다.
+              </p>
+              <p>• 교환 상품의 옵션 변경 시 금액 변동이 발생할 수 있습니다.</p>
+              <p>
+                • 환불은 반품 완료 시 진행되며, 결제수단에 따라 영업일 기준
+                1~5일 정도 소요될 수 있습니다.
+              </p>
+              <p>
+                • 상품의 교환, 반품 조건 및 품질 보증은 공정거래위원회 소비자
+                분쟁해결기준을 따릅니다.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <a href="#header">
+      <div class="topBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+    </a>
+
+    <div class="footer_outer">
+      <footer class="footer">
+        <div class="policy_list">
+          <div class="police_line">
+            <span>홈</span>
+            <span>이용약관</span>
+            <span>제휴문의</span>
+            <span>입점문의</span>
+          </div>
+          <div class="police_line">
+            <span>개인정보 처리방침</span>
+            <span>고객센터</span>
+            <span>이용안내</span>
+          </div>
+        </div>
+        <div class="company_info">
+          <div class="timeTable">
+            <p class="centerNum">CS CENTER 080-777-7777</p>
+            월-금 09:30 - 1830 (점심시간 11:00-12:00) 토,일,공휴일 휴무
+          </div>
+          <p class="company_detail">
+            회사명:(주)댕댕샵 대표:배윤주 주소:부산특별시 광안리 와우산로30길
+            18(창전동) 2층 고객문의:danginfo@dangshop.kr 입점제안 및
+            마케팅제휴:marketing@dangshop.kr 사업자등록번호:318-00-00000
+            사업자번호조회> 통신판매업신고:2025-별내-263
+          </p>
+          <p class="hosting_name">
+            호스팅 사업자: (주)카페24 Copyright @ 댕댕샵.All rights reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

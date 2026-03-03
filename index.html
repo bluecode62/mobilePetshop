@@ -1,0 +1,1381 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>댕냥베베</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <!--css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <!--폰트어썸-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <!--favicon-->
+    <script src="./js/data01.js"></script>
+    <script src="./js/main.js"></script>
+    <!--자바스크립트-->
+  </head>
+  <body>
+    <div class="acordianMenu">
+      <div class="menu_close">
+        <p>메뉴</p>
+        <div class="closeBtn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <ul class="basicMenu">
+        <li>
+          <a href="#!">로그인</a>
+          <a href="#!">회원가입</a>
+          <a href="#!">장바구니</a>
+          <a href="#!">주문조회</a>
+        </li>
+      </ul>
+      <input type="search" class="searchBar" />
+      <ul class="categoryList">
+        <li>
+          <a href="#!" class="menuBtn">
+            강아지
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+          <ul class="insideList">
+            <li>
+              <a href="#!">사료</a>
+              <a href="#!">간식</a>
+              <a href="#!">급식기/급수기</a>
+              <a href="#!">이동장/유모차</a>
+              <a href="#!">의류/악세사리</a>
+              <a href="#!">이름표</a>
+            </li>
+            <li>
+              <a href="#!">영양제</a>
+              <a href="#!">미용/목욕</a>
+              <a href="#!">하우스/울타리</a>
+              <a href="#!">건강관리</a>
+              <a href="#!">목줄/리드줄</a>
+              <a href="#!">장난감</a>
+            </li>
+            <li>
+              <a href="#!">위생/배변</a>
+              <a href="#!">대용량</a>
+              <a href="#!">기타식품</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!" class="menuBtn">
+            고양이
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+          <ul class="insideList">
+            <li>
+              <a href="#!">사료</a>
+              <a href="#!">간식</a>
+              <a href="#!">급식기/급수기</a>
+              <a href="#!">이동장/유모차</a>
+              <a href="#!">의류/악세사리</a>
+              <a href="#!">이름표</a>
+            </li>
+            <li>
+              <a href="#!">영양제</a>
+              <a href="#!">미용/목욕</a>
+              <a href="#!">하우스/울타리</a>
+              <a href="#!">건강관리</a>
+              <a href="#!">목줄/리드줄</a>
+              <a href="#!">장난감</a>
+            </li>
+            <li>
+              <a href="#!">위생/배변</a>
+              <a href="#!">대용량</a>
+              <a href="#!">기타식품</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!"
+            >이벤트
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            커뮤니티
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="serviceCall">
+        <p>고객센터 010-7777-7777</p>
+        <div class="serviceTime">
+          <p>월-금 09:30 - 18:30</p>
+          <p>(점심시간 11:00-12:00)</p>
+          <p>토, 일, 공휴일 휴무</p>
+        </div>
+        <div class="serviceBtn">
+          <button class="call">
+            <i class="fa-solid fa-phone"></i>
+            전화걸기
+          </button>
+          <button class="channel">
+            <div class="channelIcon">
+              <img src="./images/channelIcon.png" alt="채널 아이콘" />
+            </div>
+            채널추가
+          </button>
+        </div>
+      </div>
+      <div class="snsList">
+        <div class="snsIcon">
+          <img src="./images/snsIcon01.png" alt="facebook" />
+        </div>
+        <div class="snsIcon">
+          <img src="./images/snsIcon02.png" alt="instagram" />
+        </div>
+        <div class="snsIcon">
+          <img src="./images/snsIcon03.png" alt="kakaoTalk" />
+        </div>
+      </div>
+    </div>
+
+    <div class="header_outer">
+      <header class="header" id="header">
+        <div class="left_sideBox">
+          <div class="arcodian">
+            <img src="./images/listSearch_icon.png" alt="리스트서치 아이콘" />
+          </div>
+          <div class="logo_box">
+            <a href="./index.html">
+              <img src="Mobilelogo.png" alt="모바일로고 이미지" />
+            </a>
+          </div>
+          <div class="pet-select">
+            <button class="selected">강아지</button>
+            <ul class="options">
+              <li>강아지</li>
+              <li>고양이</li>
+            </ul>
+          </div>
+        </div>
+        <div class="basicIcon_box">
+          <div class="cart icon" data-count="0">
+            <img src="./images/main_cart.png" alt="카트 아이콘" />
+          </div>
+        </div>
+        <nav>
+          <ul class="gnb">
+            <li class="on">
+              <a class="on" href="#!"> 홈 </a>
+            </li>
+            <li>
+              <a href="#!"> 브랜드 </a>
+            </li>
+            <li>
+              <a href="#!"> 베스트 </a>
+            </li>
+            <li>
+              <a href="#!"> 신상품 </a>
+            </li>
+            <li>
+              <a href="#!"> 이벤트 </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="main_banner">
+      <ul>
+        <li>
+          <a href="#!">
+            <div class="mainBanner_box">
+              <img src="./images/mainBanner01.png" alt="메인배너 이미지01" />
+              <div class="banner_txtBox">
+                <p class="banner_brand">펫투데이</p>
+                <p class="mainTxt01">소형견도 대형견도</p>
+                <p class="mainTxt02">천연재료로 만든 1등</p>
+                <p class="mainTxt02 saleBox">댕댕야시장 덴탈껌</p>
+                <p class="shortTxt">즐겁게 시작하는 맛있는 구강관리</p>
+                <button class="btn">Click</button>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <div class="mainBanner_box">
+              <img src="./images/mainBanner02.png" alt="메인배너 이미지01" />
+              <div class="banner_txtBox">
+                <p class="banner_brand">팻밀시</p>
+                <p class="mainTxt01">국내 최초 반려견 쉐이크 특허!</p>
+                <p class="mainTxt02">필수 단백질과 영양소를 담은</p>
+                <p class="mainTxt02">프리미엄 사료 "펫밀크쉐이크"</p>
+                <p class="shortTxt customTxt01">
+                  우리 아이 건강을 위한 최고의 선택
+                </p>
+                <button class="btn customBtn01">Click</button>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <div class="mainBanner_box">
+              <img src="./images/mainBanner03.png" alt="메인배너 이미지01" />
+              <div class="banner_txtBox">
+                <p class="banner_brand">그루밍댕이</p>
+                <!-- <p class="mainTxt01">소형견도 대형견도</p> -->
+                <p class="mainTxt02">우리 아이에게 입히는</p>
+                <p class="mainTxt02">가장 따뜻한 품격</p>
+                <p class="shortTxt">
+                  작은 옷에 담긴 큰 마음,<br />
+                  그루밍댕이가 함께합니다
+                </p>
+                <button class="btn">Click</button>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <div class="mainBanner_box">
+              <img src="./images/mainBanner04.png" alt="메인배너 이미지01" />
+              <div class="banner_txtBox">
+                <p class="banner_brand">퓨어프렌즈</p>
+                <p class="mainTxt01">네이버 구매량&리뷰수 1위</p>
+                <p class="mainTxt02">수 십만 견주가 선택한</p>
+                <p class="mainTxt02">국민 올인원 펫샴푸</p>
+                <p class="shortTxt customTxt04">
+                  눈&피부 저자극 테스트로 안심사용!
+                </p>
+                <button class="btn customBtn04">Click</button>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <div class="mainBanner_box">
+              <img src="./images/mainBanner05.png" alt="메인배너 이미지01" />
+              <div class="banner_txtBox">
+                <p class="banner_brand">엔젤드로잉</p>
+                <p class="mainTxt01">커플로 입으면 더 예뻐!</p>
+                <p class="mainTxt02">울아이 모습이 담긴</p>
+                <p class="mainTxt02">특별한 티셔츠</p>
+                <p class="shortTxt customTxt05">
+                  반려동물 커스텀 맞춤 제작 굿즈
+                </p>
+                <button class="btn customBtn05">Click</button>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <div class="mainBanner_box">
+              <img src="./images/mainBanner06.png" alt="메인배너 이미지01" />
+              <div class="banner_txtBox">
+                <p class="banner_brand">페슬러</p>
+                <!-- <p class="mainTxt01">소형견도 대형견도</p> -->
+                <p class="mainTxt02">우리아이 간식부터 용품까지</p>
+                <p class="mainTxt02">인기상품만 쏙쏙 모았어요!</p>
+                <p class="shortTxt customTxt06">BEST템 보러가기</p>
+                <button class="btn customBtn06">Click</button>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <div class="mainBanner_box">
+              <img src="./images/mainBanner07.png" alt="메인배너 이미지01" />
+              <div class="banner_txtBox">
+                <p class="banner_brand">휴팡</p>
+                <p class="mainTxt01">뛰어다녀도 안심!</p>
+                <p class="mainTxt02">휴팡 애견매트로</p>
+                <p class="mainTxt02">슬개골 완벽 보호</p>
+                <p class="shortTxt customTxt07">
+                  여름에는 시원한 애견매트 선물하기
+                </p>
+                <button class="btn customBtn07">Click</button>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+            <div class="mainBanner_box">
+              <img src="./images/mainBanner08.png" alt="메인배너 이미지01" />
+              <div class="banner_txtBox">
+                <p class="banner_brand">요로캣</p>
+                <p class="mainTxt01">다른건 몰라도 유산균은 꼭!</p>
+                <p class="mainTxt02">아이들 면역력 지켜주는</p>
+                <p class="mainTxt02 saleBox">요로캣 저당 유산균</p>
+                <p class="shortTxt customTxt08">장까지 가는 맞춤설계</p>
+                <button class="btn customBtn08">Click</button>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="num_indicator">
+        <div class="indicator_left">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <span class="currentPage">1</span>
+        /
+        <span class="totalPage">8</span>
+        <div class="indicator_right">
+          <i class="fa-solid fa-angle-right"> </i>
+        </div>
+      </div>
+    </div>
+    <section class="notice_area">
+      <div class="notice_icon">
+        <img src="./images/news_icon.gif" alt="" />
+      </div>
+      <div class="notice_txtBox">
+        <span class="noticeAlarm">공지</span>
+        <span class="noticeTitle"
+          >[알림]크리스마스·연말연휴 배송일정 및 할인전 알림사항</span
+        >
+      </div>
+    </section>
+
+    <section class="itemiconBox">
+      <ul>
+        <li>
+          <a href="./sub.html">
+            <div class="itemIcon">
+              <img src="./images/mainitemIcon01.png" alt="아이템 아이콘01" />
+            </div>
+            <p class="iconTitle">사료</p>
+          </a>
+        </li>
+        <li>
+          <a href="./sub.html">
+            <div class="itemIcon">
+              <img src="./images/mainitemIcon02.png" alt="아이템 아이콘02" />
+            </div>
+            <p class="iconTitle">영양제</p>
+          </a>
+        </li>
+        <li>
+          <a href="./sub.html">
+            <div class="itemIcon">
+              <img src="./images/mainitemIcon03.png" alt="아이템 아이콘03" />
+            </div>
+            <p class="iconTitle">간식</p>
+          </a>
+        </li>
+        <li>
+          <a href="./sub.html">
+            <div class="itemIcon">
+              <img src="./images/mainitemIcon04.png" alt="아이템 아이콘04" />
+            </div>
+            <p class="iconTitle">위생미용</p>
+          </a>
+        </li>
+        <li>
+          <a href="./sub.html">
+            <div class="itemIcon">
+              <img src="./images/mainitemIcon05.png" alt="아이템 아이콘05" />
+            </div>
+            <p class="iconTitle">장난감</p>
+          </a>
+        </li>
+        <li>
+          <a href="./sub.html">
+            <div class="itemIcon">
+              <img src="./images/mainitemIcon06.png" alt="아이템 아이콘01" />
+            </div>
+            <p class="iconTitle">산책용품</p>
+          </a>
+        </li>
+        <li>
+          <a href="./sub.html">
+            <div class="itemIcon">
+              <img src="./images/mainitemIcon07.png" alt="아이템 아이콘01" />
+            </div>
+            <p class="iconTitle">하우스</p>
+          </a>
+        </li>
+        <li>
+          <a href="./sub.html">
+            <div class="itemIcon">
+              <img src="./images/mainitemIcon01.png" alt="아이템 아이콘01" />
+            </div>
+            <p class="iconTitle">의류</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="wrap">
+      <section class="newProduct">
+        <div class="listBox">
+          <div class="listTitle">
+            New 신상품
+            <div class="titleIcon">
+              <img src="./images/Confetti.png" alt="신상품 아이콘" />
+            </div>
+          </div>
+          <div class="more_btn">MORE></div>
+        </div>
+        <ul class="newProductList">
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/newProduct01.jpg" alt="신상품이미지01" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [X-MAS특가]크리스마스 간식 체험팩[모음]
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">5.0</span>
+                      <span class="review">(1)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">55%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">1,000원</div>
+                      <div class="salePrice">450원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/newProduct02.jpg" alt="신상품이미지01" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [X-MAS특가]슈퍼펫강아지 패딩 겨울후드
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">5.0</span>
+                      <span class="review">(0)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">60%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">39,800원</div>
+                      <div class="salePrice">16,050원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/newProduct03.jpg" alt="신상품이미지01" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  쥬비코 강아지옷 크레커 앙고라 조끼
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">5.0</span>
+                      <span class="review">(10)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">1%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">27,000원</div>
+                      <div class="salePrice">26,900원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/newProduct04.webp" alt="신상품이미지01" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [NEW신상][무료배송]개과천선 코델 뽀글이 아우터
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.5</span>
+                      <span class="review">(8)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale"></div>
+                    <div class="dualPrice">
+                      <div class="originalPrice"></div>
+                      <div class="salePrice">12,000원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/newProduct05.webp" alt="신상품이미지01" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">베스트 프라이스 ZERO 펫티슈 2종</div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">5.0</span>
+                      <span class="review">(40)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">50%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">3,000원</div>
+                      <div class="salePrice">1,490원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="newProduct Hotproduct">
+        <div class="listBox">
+          <div class="listTitle">
+            Hot 핫딜세일
+            <div class="titleIcon">
+              <img src="./images/hot.png" alt="신상품 아이콘" />
+            </div>
+          </div>
+          <div class="more_btn">MORE></div>
+        </div>
+        <ul class="newProductList">
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/hotItem01.webp" alt="핫딜 상품이미지01" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [특가]메디멀 독치카잼 관절 대용량 25p
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.8</span>
+                      <span class="review">(170)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">60%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">13,000원</div>
+                      <div class="salePrice">16,050원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/hotItem02.webp" alt="핫딜 상품이미지02" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [X-MAS특가]슈퍼펫강아지 패딩 겨울후드
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">5.0</span>
+                      <span class="review">(0)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">60%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">39,800원</div>
+                      <div class="salePrice">16,050원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/hotItem03.webp" alt="핫딜 상품이미지03" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  베스트 프라이스 딸깍트릿 닭가슴살 220g
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">5.0</span>
+                      <span class="review">(250)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">50%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">30,000원</div>
+                      <div class="salePrice">14,900원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/hotItem04.webp" alt="핫딜 상품이미지04" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">진짜육포 소고기 180g</div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.9</span>
+                      <span class="review">(180)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale"></div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">10,000원</div>
+                      <div class="salePrice">6,500원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/hotItem05.webp" alt="핫딜 상품이미지05" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">베스트 프라이스 ZERO 펫티슈 2종</div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">5.0</span>
+                      <span class="review">(40)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">50%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">3,000원</div>
+                      <div class="salePrice">1,490원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="banner_img">
+        <img src="./images/banner01.png" alt="배너 이미지01" />
+      </div>
+
+      <section class="newProduct Seasonproduct">
+        <div class="listBox">
+          <div class="listTitle">
+            시즌세일 선물특가
+            <div class="titleIcon">
+              <img src="./images/gifts.png" alt="시즌상품 아이콘" />
+            </div>
+          </div>
+          <div class="more_btn">MORE></div>
+        </div>
+        <ul class="newProductList">
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img
+                  src="./images/seasonProduct01.jpg"
+                  alt="시즌 상품이미지01"
+                />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [New신상][무료배송]딩동펫 하트 폴라넥 티셔츠 XS-XL
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.9</span>
+                      <span class="review">(510)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">24%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">15,000원</div>
+                      <div class="salePrice">11,350원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img
+                  src="./images/seasonProduct02.jpg"
+                  alt="시즌 상품이미지02"
+                />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [무료배송]도그아이 극세사 꽈배기 담요 M-XL
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.9</span>
+                      <span class="review">(10)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">10%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">35,000원</div>
+                      <div class="salePrice">31,500원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img
+                  src="./images/seasonProduct03.jpg"
+                  alt="시즌 상품이미지03"
+                />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [NEW신상][무료배송]모야펫 꽃무늬 코튼 누빔 조끼
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">5.0</span>
+                      <span class="review">(27)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">30%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">17,000원</div>
+                      <div class="salePrice">11,900원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img
+                  src="./images/seasonProduct04.jpg"
+                  alt="시즌 상품이미지04"
+                />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [NEW신상][무료배송]모야펫 HIPI Bear 곰곰곰 후리스 조끼
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">5.0</span>
+                      <span class="review">(1)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">26%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">20,000원</div>
+                      <div class="salePrice">14,900원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img
+                  src="./images/seasonProduct05.jpg"
+                  alt="핫딜 상품이미지05"
+                />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [무료배송]누핀 롤리팝 스트라이프 티셔츠 3color
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">5.0</span>
+                      <span class="review">(0)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale"></div>
+                    <div class="dualPrice">
+                      <div class="originalPrice"></div>
+                      <div class="salePrice">33,000원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!--seaonProduct-->
+
+      <section class="newProduct Bestproduct">
+        <div class="listBox">
+          <div class="listTitle">
+            카테고리 인기상품
+            <div class="titleIcon">
+              <img src="./images/bestCrown.png" alt="시즌상품 아이콘" />
+            </div>
+          </div>
+          <div class="more_btn">MORE></div>
+        </div>
+        <ul class="categorys">
+          <li>
+            <a href="#!">사료</a>
+          </li>
+          <li>
+            <a href="#!">영양제</a>
+          </li>
+          <li>
+            <a href="#!">간식</a>
+          </li>
+          <li>
+            <a href="#!">위생미용</a>
+          </li>
+          <li>
+            <a href="#!">장난감</a>
+          </li>
+          <li>
+            <a href="#!">산책용품</a>
+          </li>
+          <li>
+            <a href="#!">하우스</a>
+          </li>
+          <li>
+            <a href="#!">의류</a>
+          </li>
+        </ul>
+
+        <ul class="bestProduct_list">
+          <!-- <li>
+            <a href="./sub.html">
+              <div class="bestItem_img">
+                <img src="./images/bestItem01.jpeg" alt="베스트 상품이미지01" />
+              </div>
+              <div class="bestItem_txt">
+                <div class="product_name">
+                  더리얼 그레인프리 크런치 닭고기 어덜트 1.6kg
+                </div>
+                <span class="sale">20%</span>
+                <span class="salePrice">26,400원</span>
+                <div class="starReview">
+                  <div class="star">
+                    <img src="./images/start_icon.png" alt="별점 이미지" />
+                  </div>
+                  <div class="scoreCounts">
+                    <span class="rateScore">4.5</span>
+                    <span class="review">(500)</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li> -->
+        </ul>
+        <!-- <ul class="bestProduct_list">
+          <li>
+            <a href="./sub.html">
+              <div class="bestItem_img">
+                <img src="./images/bestItem01.jpeg" alt="베스트 상품이미지01" />
+              </div>
+              <div class="bestItem_txt">
+                <div class="product_name">
+                  더리얼 그레인프리 크런치 닭고기 어덜트 1.6kg
+                </div>
+                <span class="sale">20%</span>
+                <span class="salePrice">26,400원</span>
+                <div class="starReview">
+                  <div class="star">
+                    <img src="./images/start_icon.png" alt="별점 이미지" />
+                  </div>
+                  <div class="scoreCounts">
+                    <span class="rateScore">4.5</span>
+                    <span class="review">(500)</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="bestItem_img">
+                <img src="./images/bestItem02.jpeg" alt="베스트 상품이미지02" />
+              </div>
+              <div class="bestItem_txt">
+                <div class="product_name">
+                  네츄럴코어 독 건강한 화식브띠 키친 까르보나라 85g
+                </div>
+                <span class="sale"></span>
+                <span class="salePrice">2,300원</span>
+                <div class="starReview">
+                  <div class="star">
+                    <img src="./images/start_icon.png" alt="별점 이미지" />
+                  </div>
+                  <div class="scoreCounts">
+                    <span class="rateScore">4.5</span>
+                    <span class="review">(75)</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="bestItem_img">
+                <img src="./images/bestItem03.jpeg" alt="베스트 상품이미지03" />
+              </div>
+              <div class="bestItem_txt">
+                <div class="product_name">
+                  스텔라앤츙스 독 케이지프리 치킨스튜 311g
+                </div>
+                <span class="sale"></span>
+                <span class="salePrice">9,500원</span>
+                <div class="starReview">
+                  <div class="star">
+                    <img src="./images/start_icon.png" alt="별점 이미지" />
+                  </div>
+                  <div class="scoreCounts">
+                    <span class="rateScore">4.9</span>
+                    <span class="review">(153)</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="bestItem_img">
+                <img src="./images/bestItem04.jpeg" alt="베스트 상품이미지03" />
+              </div>
+              <div class="bestItem_txt">
+                <div class="product_name">페디그리 독 쇠고기 캔 700g</div>
+                <span class="sale">15%</span>
+                <span class="salePrice">3,500원</span>
+                <div class="starReview">
+                  <div class="star">
+                    <img src="./images/start_icon.png" alt="별점 이미지" />
+                  </div>
+                  <div class="scoreCounts">
+                    <span class="rateScore">4.9</span>
+                    <span class="review">(102)</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul> -->
+        <button class="moreBtn">카테고리 전체보기</button>
+      </section>
+
+      <section class="MDBox">
+        <div class="listBox">
+          <div class="listTitle">
+            MD추천
+            <div class="titleIcon">
+              <img src="./images/Heart.png" alt="시즌상품 아이콘" />
+            </div>
+          </div>
+          <div class="more_btn">MORE></div>
+        </div>
+        <ul>
+          <li>
+            <a href="./sub.html">
+              <div class="MDimgBox">
+                <img src="./images/MD10.jpg" alt="MD 이미지01" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="MDimgBox">
+                <img src="./images/MD11.jpg" alt="MD 이미지01" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="MDimgBox">
+                <img src="./images/MD12.jpg" alt="MD 이미지01" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="MDimgBox">
+                <img src="./images/MD13.jpg" alt="MD 이미지01" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="MDimgBox">
+                <img src="./images/MD14.jpg" alt="MD 이미지01" />
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="newProduct bigDogProduct">
+        <div class="listBox">
+          <div class="listTitle">
+            대형견
+            <div class="titleIcon">
+              <img src="./images/doggy.png" alt="대형견 아이콘" />
+            </div>
+          </div>
+          <div class="more_btn">MORE></div>
+        </div>
+        <ul class="newProductList">
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/bigFood01.jpg" alt="대형견 상품이미지01" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [무료배송]퓨얼리파우 동결건조 개구리 2p
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.9</span>
+                      <span class="review">(20)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">20%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">10,000원</div>
+                      <div class="salePrice">8,000원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/bigFood02.webp" alt="대형견 상품이미지02" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  The 건강한 독 수제간식 오리날개 100g
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.9</span>
+                      <span class="review">(100)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">10%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">12,000원</div>
+                      <div class="salePrice">10,800원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/bigFood03.jpg" alt="대형견 상품이미지03" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [무료배송][2개]펫스낵스 독 한우자연 우피 100G
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.7</span>
+                      <span class="review">(259)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale">20%</div>
+                    <div class="dualPrice">
+                      <div class="originalPrice">25,000원</div>
+                      <div class="salePrice">19,900원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/bigFood04.png" alt="대형견 상품이미지04" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">
+                  [무료배송]강아지특공대 내꼬야스틱 핏불스틱 중대형
+                </div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.8</span>
+                      <span class="review">(261)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale"></div>
+                    <div class="dualPrice">
+                      <div class="originalPrice"></div>
+                      <div class="salePrice">10,900원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="itemImg_box">
+                <img src="./images/bigFood05.jpg" alt="핫딜 상품이미지05" />
+              </div>
+              <div class="itemTxt_box">
+                <div class="product_name">지위픽 독 사슴정강이뼈 대</div>
+                <div class="ratePrice_box">
+                  <div class="starReview">
+                    <div class="star">
+                      <img src="./images/start_icon.png" alt="별점 이미지" />
+                    </div>
+                    <div class="scoreCounts">
+                      <span class="rateScore">4.2</span>
+                      <span class="review">(4)</span>
+                    </div>
+                  </div>
+                  <div class="price_box">
+                    <div class="sale"></div>
+                    <div class="dualPrice">
+                      <div class="originalPrice"></div>
+                      <div class="salePrice">40,000원</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="eventBox">
+        <div class="listBox">
+          <div class="listTitle">진행중인 이벤트</div>
+          <div class="more_btn">MORE></div>
+        </div>
+        <ul>
+          <li>
+            <a href="./sub.html">
+              <div class="eventImgBox">
+                <img src="./images/eventImg01.jpg" alt="이벤트 이미지01" />
+              </div>
+              <div class="titleWrap">
+                <span class="listTitle">스크럼블즈 사료 이벤트</span>
+                <div class="titleIcon">
+                  <img src="./images/shop.png" alt="이벤트 아이콘01" />
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="eventImgBox">
+                <img src="./images/eventImg02.jpg" alt="이벤트 이미지02" />
+              </div>
+              <div class="titleWrap">
+                <span class="listTitle">겨울 의류 특가할인 이벤트</span>
+                <span class="titleIcon">
+                  <img src="./images/Sweater.png" alt="이벤트 아이콘02" />
+                </span>
+                <span class="titleIcon">
+                  <img src="./images/Winter.png" alt="이벤트 아이콘03" />
+                </span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./sub.html">
+              <div class="eventImgBox">
+                <img src="./images/eventImg03.jpg" alt="이벤트 이미지03" />
+              </div>
+              <div class="titleWrap">
+                <span class="listTitle">멍빼로데이 1+1 특가 이벤트</span>
+                <span class="titleIcon">
+                  <img src="./images/gifts.png" alt="이벤트 아이콘04" />
+                </span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <a href="#header">
+        <div class="topBtn">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </a>
+    </div>
+
+    <div class="footer_outer">
+      <footer class="footer">
+        <div class="policy_list">
+          <div class="police_line">
+            <span>홈</span>
+            <span>이용약관</span>
+            <span>제휴문의</span>
+            <span>입점문의</span>
+          </div>
+          <div class="police_line">
+            <span>개인정보 처리방침</span>
+            <span>고객센터</span>
+            <span>이용안내</span>
+          </div>
+        </div>
+        <div class="company_info">
+          <div class="timeTable">
+            <p class="centerNum">CS CENTER 080-777-7777</p>
+            월-금 09:30 - 1830 (점심시간 11:00-12:00) 토,일,공휴일 휴무
+          </div>
+          <p class="company_detail">
+            회사명:(주)댕댕샵 대표:배윤주 주소:부산특별시 광안리 와우산로30길
+            18(창전동) 2층 고객문의:danginfo@dangshop.kr 입점제안 및
+            마케팅제휴:marketing@dangshop.kr 사업자등록번호:318-00-00000
+            사업자번호조회> 통신판매업신고:2025-별내-263
+          </p>
+          <p class="hosting_name">
+            호스팅 사업자: (주)카페24 Copyright @ 댕댕샵.All rights reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

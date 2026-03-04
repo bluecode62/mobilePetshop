@@ -214,6 +214,6 @@ position: fixed는 문서 흐름에서 요소를 제거한다는 점
 레이아웃 구조를 고려하지 않으면 UI가 쉽게 깨질 수 있다는 점
 단순 기능 구현보다, 구조 이해가 더 중요하다는 것
 
-이 경험을 통해 가상 요소(placeholder)를 활용한 공간 유지 방식의 중요성을 배웠습니다.
+👉  이 경험을 통해 가상 요소(placeholder)를 활용한 공간 유지 방식의 중요성을 배웠습니다.
 
 - Git Page 링크: https://bluecode62.github.io/mobilePetshop/

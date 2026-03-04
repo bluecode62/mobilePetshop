@@ -13,7 +13,7 @@
 
 ## ✨ 주요 기능
 1. 카테고리 분류버튼 – 메인 페이지 (index.html)
-2. API 환경을 가정한 페이지네이션 기눙 구현 – 서브 페이지 (sub.html)
+2. API 환경을 가정한 페이지네이션  – 서브 페이지 (sub.html)
 3. 스크롤 구매버튼 노출 – 디테일 페이지 (detail.html)
 
 
@@ -34,3 +34,23 @@
 해당 목록을 동적으로 화면에 출력하는 방식으로 구현했습니다.
 현재 선택된 버튼에 active 클래스를 추가하여
 사용자가 어떤 카테고리를 보고 있는지 시각적으로 구분할 수 있도록 했습니다.
+
+
+ if (categoryBtns.length > 0) {
+    renderProducts(categoryBtns[0].textContent.trim());
+  }
+  
+<h5>초기 렌더링 처리</h5>
+
+페이지가 처음 로드될 때 상품이 비어 보이지 않도록,
+첫 번째 카테고리를 기본값으로 설정하여 자동으로 렌더링되도록 구현했습니다.
+
+카테고리 버튼이 존재하는지 확인한 후,
+첫 번째 버튼의 텍스트를 기준으로 renderProducts()를 실행하도록 처리했습니다.
+
+
+<h1>API 환경을 가정한 페이지네이션</h1>
+<img width="622" height="917" alt="api01" src="https://github.com/user-attachments/assets/5db25e17-4b44-4f3f-a6e3-601a7533be7f" />
+<img width="522" height="1033" alt="패치01" src="https://github.com/user-attachments/assets/c1c2695c-b1b4-4361-a0db-d9341b305488" /><br />
+
+

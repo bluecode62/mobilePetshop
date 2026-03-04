@@ -18,6 +18,51 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  const add = document.querySelector(".add");
+  const sub = document.querySelector(".sub");
+  const numBox = document.querySelector(".numBox");
+  const choseNum = document.querySelector(".choseNum");
+  const totalSum = document.querySelector(".totalSum");
+  const buyCount = document.querySelector(".buyCount");
+
+  const price = Number(buyCount.dataset.price);
+
+  add.addEventListener("click", () => {
+    let count = Number(numBox.value);
+    count++;
+
+    numBox.value = count;
+    choseNum.textContent = `${count}개`;
+    totalSum.textContent = (count * price).toLocaleString() + "원";
+  });
+
+  sub.addEventListener("click", () => {
+    let count = Number(numBox.value);
+
+    if (count <= 1) {
+      return;
+    }
+
+    count--;
+
+    numBox.value = count;
+    choseNum.textContent = `${count}개`;
+    totalSum.textContent = (count * price).toLocaleString() + "원";
+  });
+
+  const cartIcon = document.querySelector(".cart");
+  const wishBtn = document.querySelector(".wishBtn");
+
+  wishBtn.addEventListener("click", () => {
+    const count = Number(numBox.value);
+    const current = Number(cartIcon.dataset.count);
+
+    cartIcon.dataset.count = current + count;
+    numBox.value = 1;
+    choseNum.textContent = "1개";
+    totalSum.textContent = price.toLocaleString() + "원";
+  });
+
   const slider = document.querySelector(".detailItemImg");
   const items = slider.querySelectorAll(".detailItemImg li");
 
@@ -90,13 +135,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const index = getCurrentIndex();
     const lastIndex = items.length - 1;
 
-    if(index === 0){
+    if (index === 0) {
       leftInside.style.opacity = 0;
       rightInside.style.opacity = 1;
       return;
     }
 
-    if(index === lastIndex){
+    if (index === lastIndex) {
       leftInside.style.opacity = 1;
       rightInside.style.opacity = 0;
       return;
@@ -106,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
     rightInside.style.opacity = 1;
   }
 
-  function moveToIndex(index){
+  function moveToIndex(index) {
     const itemWidth = slider.clientWidth;
 
     slider.scrollTo({
@@ -119,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const current = getCurrentIndex();
     const lastIndex = items.length - 1;
 
-    if(current >= lastIndex) return;
+    if (current >= lastIndex) return;
 
     moveToIndex(current + 1);
   });
@@ -127,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
   leftInside.addEventListener("click", () => {
     const current = getCurrentIndex();
 
-    if(current <= 0) return;
+    if (current <= 0) return;
 
     moveToIndex(current - 1);
   });
@@ -150,50 +195,5 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector(".btnTxt").textContent = "상품설명 펼쳐보기";
       icon.classList.replace("fa-angle-up", "fa-angle-down");
     }
-  });
-
-  const add = document.querySelector(".add");
-  const sub = document.querySelector(".sub");
-  const numBox = document.querySelector(".numBox");
-  const choseNum = document.querySelector(".choseNum");
-  const totalSum = document.querySelector(".totalSum");
-  const buyCount = document.querySelector(".buyCount");
-
-  const price = Number(buyCount.dataset.price);
-
-  add.addEventListener("click", () => {
-    let count = Number(numBox.value);
-    count++;
-
-    numBox.value = count;
-    choseNum.textContent = `${count}개`;
-    totalSum.textContent = (count * price).toLocaleString() + "원";
-  });
-
-  sub.addEventListener("click", () => {
-    let count = Number(numBox.value);
-
-    if (count <= 1) {
-      return;
-    }
-
-    count--;
-
-    numBox.value = count;
-    choseNum.textContent = `${count}개`;
-    totalSum.textContent = (count * price).toLocaleString() + "원";
-  });
-
-  const cartIcon = document.querySelector(".cart");
-  const wishBtn = document.querySelector(".wishBtn");
-
-  wishBtn.addEventListener("click", () => {
-    const count = Number(numBox.value);
-    const current = Number(cartIcon.dataset.count);
-
-    cartIcon.dataset.count = current + count;
-    numBox.value = 1;
-    choseNum.textContent = "1개";
-    totalSum.textContent = price.toLocaleString() + "원";
   });
 });

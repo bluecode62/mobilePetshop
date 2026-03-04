@@ -53,4 +53,12 @@
 <img width="622" height="917" alt="api01" src="https://github.com/user-attachments/assets/5db25e17-4b44-4f3f-a6e3-601a7533be7f" />
 <img width="522" height="1033" alt="패치01" src="https://github.com/user-attachments/assets/c1c2695c-b1b4-4361-a0db-d9341b305488" /><br />
 
+<h5>카테고리별 데이터 반환 함수</h5>
+
+실제 서버 API 통신을 가정하여 Promise 기반으로 데이터를 반환하도록 구현했습니다.
+fetchCategoryData() 함수는 카테고리 값을 전달받아,
+switch문을 통해 해당 카테고리에 맞는 상품 데이터를 반환합니다.
+setTimeout을 활용하여 실제 API 요청처럼 약간의 지연 시간을 주어
+비동기 처리 흐름을 연습했습니다.
+일치하는 데이터가 없는 경우에는 빈 배열을 반환하도록 예외 처리를 추가했습니다.
 

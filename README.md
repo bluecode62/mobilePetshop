@@ -18,7 +18,7 @@
 2. API 환경을 가정한 상품 리스트 페이지	페이지네이션 – 서브 페이지 (sub.html)
 3. 스크롤 기반 구매 UI 노출 & 장바구니 수량 관리 – 디테일 페이지 (detail.html)
 
-<h1>카테고리 분류버튼</h1>
+<h1>카테고리 기반 상품 분류 UI</h1>
 <img width="633" height="710" alt="데이터01" src="https://github.com/user-attachments/assets/2b011ecb-cd3d-40a4-ac7e-eb0d1669c5f9" />
 <img width="828" height="1120" alt="category01" src="https://github.com/user-attachments/assets/1353687b-b687-49cd-99f5-6ae450a9b2f3" /><br />
 
@@ -26,6 +26,94 @@
 * filter()를 사용하여 카테고리별 데이터 분리
 * innerHTML로 리스트 재렌더링
 * 클릭된 버튼에 active 클래스 적용
+
+
+💡 상품 데이터 구조
+
+```
+const productData = [
+  {
+    id: 1,
+    category: "사료",
+    name: "더리얼 그레인프리 크런치 닭고기 어덜트 1.6kg",
+    image: "./images/bestItem01.jpeg",
+    sale: 20,
+    price: 26400,
+    rate: 4.5,
+    review: 500,
+  },
+];
+```
+📝 상품 정보는 객체 형태로 관리하고, 이를 배열로 구성하여 사용
+👉 카테고리 필터링 및 상품 렌더링을 효율적으로 처리
+
+
+<h5>카테고리 필터링 및 상품 렌더링 코드</h5>
+
+```
+const categoryBtns = document.querySelectorAll(".categorys li ");
+const productList = document.querySelector(".bestProduct_list");
+
+function renderProducts(category) {
+  const filtered = productData.filter((item) => item.category === category);
+  let html = "";
+
+  filtered.forEach((item) => {
+    html += `
+      <li>
+        <a href="./sub.html">
+          <div class="bestItem_img">
+            <img src="${item.image}" alt="${item.name}" />
+          </div>
+          <div class="bestItem_txt">
+            <div class="product_name">${item.name}</div>
+            <span class="sale">${item.sale ? item.sale + "%" : ""}</span>
+            <span class="salePrice">${item.price.toLocaleString()}원</span>
+            <div class="starReview">
+              <div class="star">
+                <img src="./images/start_icon.png" alt="별점 이미지" />
+              </div>
+              <div class="scoreCounts">
+                <span class="rateScore">${item.rate}</span>
+                <span class="review">(${item.review})</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+    `;
+  });
+
+  productList.innerHTML = html;
+}
+
+categoryBtns[0].classList.add("active");
+
+categoryBtns.forEach((li) => {
+  li.addEventListener("click", () => {
+    categoryBtns.forEach((item) => item.classList.remove("active"));
+    li.classList.add("active");
+
+    renderProducts(li.textContent.trim());
+  });
+});
+
+if (categoryBtns.length > 0) {
+  renderProducts(categoryBtns[0].textContent.trim());
+}
+```
+
+💡 코드의 핵심 흐름
+
+카테고리 버튼 클릭( categoryBtns )
+↓
+카테고리 값 가져오기( productData )
+↓
+filter()로 상품 데이터 추출 (  category: "사료" )
+↓
+innerHTML로 상품 리스트 재렌더링 ( renderProducts(category) )
+↓
+active 클래스로 현재 선택 상태 표시 ( li.classList.add("active"); )
 
 상단 카테고리 버튼 클릭 시,
 선택한 카테고리에 해당하는 상품만 화면에 다시 렌더링되도록 구현했습니다.
@@ -36,16 +124,33 @@
 현재 선택된 버튼에 active 클래스를 추가하여
 사용자가 어떤 카테고리를 보고 있는지 시각적으로 구분할 수 있도록 했습니다.
 
+```
+if (categoryBtns.length > 0) {
+  renderProducts(categoryBtns[0].textContent.trim());
+}
 
- if (categoryBtns.length > 0) {
-    renderProducts(categoryBtns[0].textContent.trim());
-  }
-  
+// 버튼이 존재하는지 먼저 확인
+if (categoryBtns.length > 0)
+= 카테고리 버튼이 하나 이상 존재할 때만 실행하도록 안전장치를 둔 코드
+
+// 첫 번째 카테고리로 초기 상품 렌더링
+renderProducts(categoryBtns[0].textContent.trim());
+
+categoryBtns[0]
+→ 첫 번째 카테고리 버튼
+
+textContent
+→ 버튼 안에 있는 텍스트 (카테고리 이름)
+
+trim()
+→ 앞뒤 공백 제거
+= productData.category 값과 정확히 비교
+```
+✏️ 
 <h5>초기 렌더링 처리</h5>
 
 페이지가 처음 로드될 때 상품이 비어 보이지 않도록,
 첫 번째 카테고리를 기본값으로 설정하여 자동으로 렌더링되도록 구현했습니다.
-
 카테고리 버튼이 존재하는지 확인한 후,
 첫 번째 버튼의 텍스트를 기준으로 renderProducts()를 실행하도록 처리했습니다.
 

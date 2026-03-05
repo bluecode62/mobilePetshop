@@ -51,7 +51,7 @@
 
 
 <h1>API 환경을 가정한 페이지네이션</h1>
-<img width="622" height="917" alt="api01" src="https://github.com/user-attachments/assets/5db25e17-4b44-4f3f-a6e3-601a7533be7f" />
+<img width="622" height="917" alt="pagenation" src="https://github.com/user-attachments/assets/a6ad6b6e-f89b-4a93-813e-fd827b6762bc" />
 <img width="522" height="1033" alt="패치01" src="https://github.com/user-attachments/assets/c1c2695c-b1b4-4361-a0db-d9341b305488" /><br />
 
 <h5>카테고리별 데이터 반환 함수</h5>

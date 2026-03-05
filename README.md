@@ -50,7 +50,7 @@ const productData = [
 
 <h5>카테고리 필터링 및 상품 렌더링 코드</h5><br />
 
-```
+```javascript 
 const categoryBtns = document.querySelectorAll(".categorys li ");
 const productList = document.querySelector(".bestProduct_list");
 

@@ -1,5 +1,5 @@
 # 🐶 펫쇼핑몰 댕냥베베(모바일)
- :모바일 환경을 기준으로 제작한 펫 쇼핑몰 UI 퍼블리싱 프로젝트입니다.
+ :모바일 환경을 기준으로 제작한 펫 쇼핑몰 UI 퍼블리싱 프로젝트입니다.<br />
 상품 탐색부터 구매까지의 흐름을 고려하여 카테고리 필터, 페이지네이션, 스크롤 기반 구매 UI 등을 구현했습니다.
 
 ## 🛠 사용 기술
@@ -86,14 +86,18 @@ then()을 통해 데이터를 전달받아 API 통신 이후 화면이 업데이
 일부 상품은 할인 정보가 있고,
 일부는 없는 구조이기 때문에 조건부 렌더링을 적용했습니다.
 
+```
 ${item.salePercent ? Number(item.salePercent).toLocaleString() + "%" : ""}
+```
 👉 값이 있을 경우만 출력
 👉 없으면 빈 값 반환
 
+```
 function formatPrice(price) {
   if (!price) return "";
   return Number(price).toLocaleString() + "원";
 }
+```
 👉 undefined / null / 빈 값 예외 처리
 👉 숫자 + '원'으로 반환
 
@@ -120,6 +124,7 @@ function formatPrice(price) {
 상품 수량 변경 시 총 금액이 실시간으로 계산되도록 구현하였으며,
 장바구니 버튼 클릭 시 현재 수량을 누적하여 반영하도록 구성했습니다.
 
+```
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY || window.pageYOffset;
   const triggerBottom = trigger.offsetTop + trigger.offsetHeight;
@@ -133,6 +138,7 @@ window.addEventListener("scroll", () => {
     Counter.classList.remove("fixed");
   }
 });
+```
 
 <h5>스크롤 위치에 따른 구매바 고정 노출</h5>
 
@@ -143,6 +149,7 @@ window.addEventListener("scroll", () => {
 👉 사용자가 상품 정보를 충분히 확인한 뒤,
 바로 구매할 수 있도록 화면 하단에 나타나는 UX 기능 
 
+```
 add.addEventListener("click", () => {
   let count = Number(numBox.value);
   count++;
@@ -151,6 +158,7 @@ add.addEventListener("click", () => {
   choseNum.textContent = `${count}개`;
   totalSum.textContent = (count * price).toLocaleString() + "원";
 });
+```
 
 <h5>상품 수량 증가/감소 및 실시간 가격 계산</h5>
 
@@ -160,12 +168,14 @@ add.addEventListener("click", () => {
 
 👉 사용자 입력에 따라 즉시 가격이 반영되도록 구현 
 
+```
 wishBtn.addEventListener("click", () => {
   const count = Number(numBox.value);
   const current = Number(cartIcon.dataset.count);
 
   cartIcon.dataset.count = current + count;
 });
+```
 
 <h5>장바구니 수량 누적 처리</h5>
 
@@ -190,17 +200,17 @@ wishBtn.addEventListener("click", () => {
 position: fixed가 적용되면 해당 요소는 문서 흐름에서 제거됩니다.
 따라서 헤더가 차지하고 있던 공간이 사라지면서
 아래 요소들이 그 자리를 채우기 위해 위로 이동하게 된 것이었습니다.
-
+```
 const placeholder = document.createElement("div");
 placeholder.classList.add("header-placeholder");
 placeholder.style.height = header.offsetHeight + "px";
 placeholder.style.display = "none";
 
 header.parentNode.insertBefore(placeholder, header);
-
+```
 👉 헤더가 고정될 때
    기존 높이만큼의 placeholder 요소를 동적으로 생성하여  빈 공간을 유지하도록 처리 
-
+```
 if (window.scrollY >= 200) {
   header.classList.add("fixed");
   placeholder.style.display = "block";
@@ -208,7 +218,7 @@ if (window.scrollY >= 200) {
   header.classList.remove("fixed");
   placeholder.style.display = "none";
 }
-
+```
 👉  헤더가 fixed 될 때는 placeholder를 보이게 하여 레이아웃이 유지되도록 설정
 
 position: fixed는 문서 흐름에서 요소를 제거한다는 점

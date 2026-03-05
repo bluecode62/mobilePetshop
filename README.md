@@ -217,8 +217,8 @@ then()을 통해 데이터를 전달받아 API 통신 이후 화면이 업데이
 ```
 ${item.salePercent ? Number(item.salePercent).toLocaleString() + "%" : ""}
 ```
-👉 값이 있을 경우만 출력
-👉 없으면 빈 값 반환
+👉 값이 있을 경우만 출력<br />
+👉 없으면 빈 값 반환<br />
 
 ```
 function formatPrice(price) {
@@ -226,8 +226,8 @@ function formatPrice(price) {
   return Number(price).toLocaleString() + "원";
 }
 ```
-👉 undefined / null / 빈 값 예외 처리
-👉 숫자 + '원'으로 반환
+👉 undefined / null / 빈 값 예외 처리<br />
+👉 숫자 + '원'으로 반환<br />
 
 
 <img width="612" height="410" alt="patch05" src="https://github.com/user-attachments/assets/fb949621-a853-4b9e-ac32-f46aba947bfe" /><br />

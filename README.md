@@ -159,7 +159,6 @@ trim()
 <img width="522" height="1033" alt="패치01" src="https://github.com/user-attachments/assets/c1c2695c-b1b4-4361-a0db-d9341b305488" /><br />
 
 
-
 실제 서버 API 통신을 가정하여 Promise 기반으로 데이터를 반환하도록 구현했습니다.<br />
 fetchCategoryData() 함수는 카테고리 값을 전달받아,<br />
 switch문을 통해 해당 카테고리에 맞는 상품 데이터를 반환합니다.<br />
@@ -187,14 +186,14 @@ export function fetchCategoryData(category) {
 ```
 <h5>카테고리별 데이터 반환 함수</h5>
 
-✏️ 카테고리별 상품을 각 배열로 관리 → 유지보수 용이
-✏️ Promise + setTimeout()으로 비동기 API 호출 가정
-✏️ resolve()를 통해 선택된 카테고리 데이터를 반환
+✏️ 카테고리별 상품을 각 배열로 관리 → 유지보수 용이<br />
+✏️ Promise + setTimeout()으로 비동기 API 호출 가정<br />
+✏️ resolve()를 통해 선택된 카테고리 데이터를 반환<br />
 
 
 <img width="1053" height="1073" alt="patch02" src="https://github.com/user-attachments/assets/5b320dd3-c4fd-46c1-b22f-c7498a57d252" /><br />
 
-<h5>API 환경을 가정한 비동기 카테고리 처리</h5>
+<h5>렌더링 & 페이지네이션 로직</h5>
 
 *카테고리 클릭<br />
 *fetchCategoryData(category) 실행<br />
@@ -244,6 +243,7 @@ function formatPrice(price) {
 페이지 최초 로드 시에는
 기본 카테고리인 "하네스" 데이터를 자동으로 불러와
 초기 화면이 비어 보이지 않도록 처리했습니다.
+
 
 <h1>스크롤 기반 구매바 노출 & 장바구니 수량 관리</h1>
 <img width="918" height="1772" alt="buy01" src="https://github.com/user-attachments/assets/1c45a5f9-9a88-4f97-a37d-052e24f93127" /><br />

@@ -106,13 +106,13 @@ if (categoryBtns.length > 0) {
 💡 코드의 핵심 흐름<br />
 
 카테고리 버튼 클릭( categoryBtns )<br />
-↓
+↓<br />
 카테고리 값 가져오기( productData )<br />
-↓
+↓<br />
 filter()로 상품 데이터 추출 (  category: "사료" )<br />
-↓
+↓<br />
 innerHTML로 상품 리스트 재렌더링 ( renderProducts(category) )<br />
-↓
+↓<br />
 active 클래스로 현재 선택 상태 표시 ( li.classList.add("active"); )<br />
 
 상단 카테고리 버튼 클릭 시,<br />

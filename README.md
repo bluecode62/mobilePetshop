@@ -20,7 +20,7 @@
 
 <h1>카테고리 분류버튼</h1>
 <img width="633" height="710" alt="데이터01" src="https://github.com/user-attachments/assets/2b011ecb-cd3d-40a4-ac7e-eb0d1669c5f9" />
-<img width="828" height="1120" alt="카테고리01" src="https://github.com/user-attachments/assets/e907d88d-45ed-49cd-894e-9c14dc9c0256" /><br />
+<img width="828" height="1120" alt="category01" src="https://github.com/user-attachments/assets/1353687b-b687-49cd-99f5-6ae450a9b2f3" /><br />
 
 * 상품 데이터를 배열로 관리
 * filter()를 사용하여 카테고리별 데이터 분리

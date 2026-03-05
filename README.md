@@ -1,9 +1,11 @@
 # 🐶 펫쇼핑몰 댕냥베베(모바일)
- 
+ :모바일 환경을 기준으로 제작한 펫 쇼핑몰 UI 퍼블리싱 프로젝트입니다.
+상품 탐색부터 구매까지의 흐름을 고려하여 카테고리 필터, 페이지네이션, 스크롤 기반 구매 UI 등을 구현했습니다.
+
 ## 🛠 사용 기술
 - HTML5
-- CSS3
-- JavaScript
+- CSS3/SCSS
+- JavaScript (ES6)
 
 ## 📂 페이지 구성
 - 메인 페이지
@@ -12,10 +14,9 @@
 
 
 ## ✨ 주요 기능
-1. 카테고리 분류버튼 – 메인 페이지 (index.html)
-2. API 환경을 가정한 페이지네이션  – 서브 페이지 (sub.html)
-3. 스크롤 기반 구매바 노출 & 장바구니 수량 관리 – 디테일 페이지 (detail.html)
-
+1. 	카테고리 기반 상품 분류 UI – 메인 페이지 (index.html)
+2. API 환경을 가정한 상품 리스트 페이지	페이지네이션 – 서브 페이지 (sub.html)
+3. 스크롤 기반 구매 UI 노출 & 장바구니 수량 관리 – 디테일 페이지 (detail.html)
 
 <h1>카테고리 분류버튼</h1>
 <img width="633" height="710" alt="데이터01" src="https://github.com/user-attachments/assets/2b011ecb-cd3d-40a4-ac7e-eb0d1669c5f9" />

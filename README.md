@@ -358,4 +358,4 @@ position: fixed는 문서 흐름에서 요소를 제거한다는 점
 
 👉  이 경험을 통해 가상 요소(placeholder)를 활용한 공간 유지 방식의 중요성을 배웠습니다.
 
-- Git Page 링크: https://bluecode62.github.io/mobilePetshop/
+📍  Git Page 링크: https://bluecode62.github.io/mobilePetshop/

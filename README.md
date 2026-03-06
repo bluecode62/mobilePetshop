@@ -21,7 +21,7 @@
 
 
 
-<h1>햄버거 메뉴 슬라이드 네비게이션</h1>
+<h1>슬라이드 메뉴 & 아코디언 네비게이션</h1>
 <img width="581" height="350" alt="햄버거01" src="https://github.com/user-attachments/assets/19998490-4510-497c-b96f-c327706da3d1" /><br />
 <img width="589" height="705" alt="햄버거02" src="https://github.com/user-attachments/assets/942457b0-2c3c-4829-9737-865aa54e1da7" /><br />
 

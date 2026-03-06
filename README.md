@@ -14,18 +14,38 @@
 
 
 ## ✨ 주요 기능
-1. 	카테고리 상품 분류 UI – 메인 페이지 (index.html)
-2. 카테고리 기반 페이지네이션 (API 가정) – 서브 페이지 (sub.html)
-3. 스크롤 기반 구매 UI 노출 & 장바구니 수량 관리 – 디테일 페이지 (detail.html)
+1. 슬라이드 메뉴 & 아코디언 네비게이션 
+2. 카테고리 상품 분류 UI – 메인 페이지 (index.html)
+3. 카테고리 기반 페이지네이션 (API 가정) – 서브 페이지 (sub.html)
+4. 스크롤 기반 구매 UI 노출 & 장바구니 수량 관리 – 디테일 페이지 (detail.html)
+
+
+
+<h1>햄버거 메뉴 슬라이드 네비게이션</h1>
+<img width="581" height="350" alt="햄버거01" src="https://github.com/user-attachments/assets/19998490-4510-497c-b96f-c327706da3d1" /><br />
+<img width="589" height="705" alt="햄버거02" src="https://github.com/user-attachments/assets/942457b0-2c3c-4829-9737-865aa54e1da7" /><br />
+
+모바일 화면에서 햄버거 메뉴 아이콘을 클릭하면 왼쪽에서 슬라이드 방식으로 메뉴 패널이 나타나도록 구현했습니다.<br />
+닫기 버튼을 누르면 메뉴 패널이 다시 화면 밖으로 이동하며 자연스럽게 닫히도록 제작했습니다.<br />
+또한 메뉴 내부에는 아코디언 구조의 카테고리 메뉴를 적용하여, 카테고리를 클릭하면 하위 메뉴가 아래로 펼쳐지고<br />
+다른 카테고리를 선택하면 기존에 열려 있던 메뉴는 자동으로 닫히도록 구현했습니다.<br />
+
+📝 주요 기능<br />
+<br />
+✏️ 햄버거 메뉴 클릭 시 슬라이드 네비게이션 등장<br />
+✏️ 닫기 버튼 클릭 시 메뉴 패널 화면 밖으로 이동<br />
+✏️ 카테고리 클릭 시 하위 메뉴 아코디언 방식으로 펼침<br />
+✏️다른 카테고리 선택 시 기존 메뉴 자동 닫힘<br />
+
 
 <h1>카테고리 기반 상품 분류 UI</h1>
 <img width="633" height="710" alt="데이터01" src="https://github.com/user-attachments/assets/2b011ecb-cd3d-40a4-ac7e-eb0d1669c5f9" />
 <img width="828" height="1120" alt="category01" src="https://github.com/user-attachments/assets/1353687b-b687-49cd-99f5-6ae450a9b2f3" /><br />
 
-* 상품 데이터를 배열로 관리
-* filter()를 사용하여 카테고리별 데이터 분리
-* innerHTML로 리스트 재렌더링
-* 클릭된 버튼에 active 클래스 적용
+🎈 상품 데이터를 배열로 관리
+🎈 filter()를 사용하여 카테고리별 데이터 분리
+🎈 innerHTML로 리스트 재렌더링
+🎈 클릭된 버튼에 active 클래스 적용
 
 
 💡 상품 데이터 구조
@@ -195,11 +215,11 @@ export function fetchCategoryData(category) {
 
 <h5>렌더링 & 페이지네이션 로직</h5>
 
-*카테고리 클릭<br />
-*fetchCategoryData(category) 실행<br />
-*Promise로 데이터 반환<br />
-*then()에서 renderProducts() 호출<br />
-*상품 목록 재렌더링<br />
+✏️카테고리 클릭<br />
+✏️*fetchCategoryData(category) 실행<br />
+✏️Promise로 데이터 반환<br />
+✏️then()에서 renderProducts() 호출<br />
+✏️상품 목록 재렌더링<br />
 
 실제 서버에서 데이터를 받아오는 상황을 가정하여,<br />
 Promise 기반의 비동기 구조로 카테고리별 상품 데이터를 불러오도록 구현했습니다.<br />

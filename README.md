@@ -47,7 +47,7 @@
 🎈 innerHTML로 리스트 재렌더링<br />
 🎈 클릭된 버튼에 active 클래스 적용<br />
 
-
+<br />
 💡 상품 데이터 구조<br />
 
 ```javascript

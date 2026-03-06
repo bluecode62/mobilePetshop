@@ -22,7 +22,7 @@
 
 
 <h1>모바일 슬라이드 메뉴 & 아코디언 네비게이션</h1>
-<img width="581" height="350" alt="햄버거01" src="https://github.com/user-attachments/assets/19998490-4510-497c-b96f-c327706da3d1" /><br />
+<img width="491" height="206" alt="햄버거01" src="https://github.com/user-attachments/assets/47081df9-198c-444c-940f-09f6b6ce7751" /><br />
 <img width="589" height="705" alt="햄버거02" src="https://github.com/user-attachments/assets/942457b0-2c3c-4829-9737-865aa54e1da7" /><br />
 
 모바일 화면에서 햄버거 메뉴 아이콘을 클릭하면 왼쪽에서 슬라이드 방식으로 메뉴 패널이 나타나도록 구현했습니다.<br />

@@ -333,7 +333,9 @@ wishBtn.addEventListener("click", () => {
 * 담기 후 기본 수량과 금액 초기화
 
 👉 HTML data-* 속성을 활용해 간단히 상태를 관리
-<br />
+
+
+
 🚀 트러블 슈팅
 
 1️⃣헤더 fixed 처리 시 레이아웃 깨짐 문제<br />

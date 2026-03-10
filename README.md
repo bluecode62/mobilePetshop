@@ -274,7 +274,7 @@ function formatPrice(price) {
 <h1>스크롤 기반 구매바 노출 & 장바구니 수량 관리</h1>
 <img width="425" height="870" alt="구매바01" src="https://github.com/user-attachments/assets/b88e5700-1e32-4675-87d8-5f98d902739a" />
 <img width="424" height="138" alt="구매바02" src="https://github.com/user-attachments/assets/4ea71fa5-6069-4a4b-9073-9d8da647eb4a" />
-<img width="422" height="59" alt="구매바03" src="https://github.com/user-attachments/assets/a7f351a7-00e0-46d6-8913-aeb2e8ad68b7" /><br />
+<img width="422" height="59" alt="구매바03" src="https://github.com/user-attachments/assets/a7f351a7-00e0-46d6-8913-aeb2e8ad68b7" /> 
 <img width="918" height="1772" alt="buy01" src="https://github.com/user-attachments/assets/1c45a5f9-9a88-4f97-a37d-052e24f93127" /><br />
 상품 상세 페이지에서 리뷰 영역을 지나면 구매 버튼 영역이 고정 노출되도록 구현했습니다.
 스크롤 위치를 계산하여 특정 구간에서만 .fixed 클래스를 적용하도록 처리했습니다.

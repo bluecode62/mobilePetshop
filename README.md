@@ -1,4 +1,4 @@
-# 🐶 펫쇼핑몰 댕냥베베(모바일)
+<img width="425" height="851" alt="서브API02" src="https://github.com/user-attachments/assets/bdbd28d3-caa9-4f2c-832a-815d09f92999" /># 🐶 펫쇼핑몰 댕냥베베(모바일)
  :모바일 환경을 기준으로 제작한 펫 쇼핑몰 UI 퍼블리싱 프로젝트입니다.<br />
 상품 탐색부터 구매까지의 흐름을 고려하여 카테고리 필터, 페이지네이션, 스크롤 기반 구매 UI 등을 구현했습니다.
 
@@ -179,6 +179,8 @@ trim()
 
 
 <h1>카테고리 기반 페이지네이션 (API 가정)</h1>
+<img width="422" height="848" alt="서브API01" src="https://github.com/user-attachments/assets/3d71af3c-fdab-485d-b7ff-1b2b877e2628" />
+<img width="425" height="851" alt="서브API02" src="https://github.com/user-attachments/assets/6ea8e7ba-188d-40a5-aafe-ccadfb5313f3" /><br />
 <img width="622" height="917" alt="pagenation" src="https://github.com/user-attachments/assets/a6ad6b6e-f89b-4a93-813e-fd827b6762bc" />
 <img width="522" height="1033" alt="패치01" src="https://github.com/user-attachments/assets/c1c2695c-b1b4-4361-a0db-d9341b305488" /><br />
 

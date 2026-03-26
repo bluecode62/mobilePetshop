@@ -344,7 +344,7 @@ wishBtn.addEventListener("click", () => {
 
 
 
-🚀 트러블 슈팅
+###🚀 트러블 슈팅
 
 1️⃣헤더 fixed 처리 시 레이아웃 깨짐 문제<br />
 
